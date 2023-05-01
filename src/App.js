@@ -1,8 +1,18 @@
-
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import Venues from "./pages/venues";
+import Venue from "./pages/venue";
+import CreateNewVenue from "./pages/create-new-venue";
+import SignIn from "./pages/sign-in";
+import Register from "./pages/register";
+import Dashboard from "./pages/dashboard";
+import ManageBooking from "./pages/manage-booking";
+import ManageVenue from "./pages/manage-venue";
+import PageNotFound from "./pages/page-not-found";
 
 function App() {
   return (
-    <div>
+    <>
       <h1>hello</h1>
       <h2>hello</h2>
       <h3>hello</h3>
@@ -37,9 +47,20 @@ function App() {
       </div>
       <div className="flex-h"><input type="checkbox"></input><p>hello</p></div>
       <input type="checkbox"></input>
-      
-      
-    </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/venues" element={<Venues />} />
+        <Route path="/:id" element={<Venue />} />
+        <Route path="/create-new-venue" element={<CreateNewVenue />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/manage-booking" element={<ManageBooking />} />
+        <Route path="/manage-venue" element={<ManageVenue />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </>
   );
 }
 
