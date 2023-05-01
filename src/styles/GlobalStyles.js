@@ -1,4 +1,6 @@
+import styled, { createGlobalStyle } from "styled-components";
 
+const GlobalStyles = createGlobalStyle`
 :root {
   --dark-grey: #424242;
   --dark-grey-transparent: rgba(66,66,66,0.10);
@@ -19,9 +21,8 @@ body {
   font-size: 1rem;
   color: var(--dark-grey);
   background-color: var(--white);
-  letter-spacing: 3%;
+  letter-spacing: 0.03rem;
 }
-
 
 h1 {
   font-size: 2.25rem;
@@ -47,12 +48,15 @@ h4 {
   line-height: 130%;
 }
 
-nav > a, button {
+.link, button {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 150%;
   text-decoration: none;
+  color: var(--dark-grey);
+  letter-spacing: 0.03rem;
 }
+
 
 h5, label, input {
   font-size: 1.25rem;
@@ -152,7 +156,7 @@ input, textarea {
 
 input::placeholder {
   color: var(--light-grey);
-  letter-spacing: 3%;
+  letter-spacing: 0.03rem;
 }
 
 input[type=checkbox] {
@@ -160,7 +164,6 @@ input[type=checkbox] {
   height: 22px;
   margin-right: 10px;
 }
-
 
 .icon {
   height: auto;
@@ -179,7 +182,7 @@ input[type=checkbox] {
   flex-direction: column;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
 
   h1 {
     font-size: 2rem;
@@ -213,7 +216,20 @@ input[type=checkbox] {
   }
   
 }
+`;
 
+export const Logo = styled.img`
+  height: 48px;
+  width: auto;
 
+  @media screen and (max-width: 900px) {
+    height: 35px;
+  }
+`;
 
+export const Container = styled.div`
+  max-width: 90%;
+  margin: 0 auto;
+`;
 
+export default GlobalStyles;
