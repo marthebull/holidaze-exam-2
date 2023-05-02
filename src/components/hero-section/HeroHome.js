@@ -14,7 +14,10 @@ const HeroHome = () => {
             backgroundColor: `#424242`,
           }}
         >
-          <HeroLogo src="images/logo-holidaze-white.svg"></HeroLogo>
+          <HeroLogo
+            src="images/logo-holidaze-white.svg"
+            className="pb-6"
+          ></HeroLogo>
           <h1 className="white h4">
             discover, book and enjoy the most exquisite venues.
           </h1>

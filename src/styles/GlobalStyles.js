@@ -127,7 +127,7 @@ button {
   border-radius: 2px;
   cursor: pointer;
   text-decoration: none;
-  margin: 40px auto;
+  margin: 10px auto;
 }
 
 input, textarea {

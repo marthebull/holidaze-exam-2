@@ -21,7 +21,7 @@ const HeroManage = () => {
         >
           <small className="white">manage venue</small>
           <h1 className="white h3">Venue Name Blabla</h1>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col pt-6 gap-1 md:flex-row md:gap-4">
             <ButtonSolidWhite>edit</ButtonSolidWhite>
             <ButtonOutlineWhite>delete</ButtonOutlineWhite>
           </div>

@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      <FooterCont>
+      <FooterCont className="mt-10">
         <FooterInner>
           <BrandInfo>
             <Link to="/" className="link">
