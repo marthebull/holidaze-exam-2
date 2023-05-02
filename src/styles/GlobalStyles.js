@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
     color: var(--white);
 }
 
+.bg-dark {
+    background-color: rgba(10,10,10,0.40);
+}
+
 * {
   margin: 0;
   padding: 0;

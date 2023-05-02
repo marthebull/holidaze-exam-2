@@ -13,9 +13,9 @@ const ListCard = () => {
               src="https://a0.muscache.com/im/pictures/miso/Hosting-51257102/original/110df613-4152-4aaf-975d-a5787fb1b4a5.jpeg?im_w=1200"
               alt="Sunset in the mountains"
             ></img>
-            <div class="flex flex-col justify-center align-middle z-20 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-neutral-950 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-60">
+            <div class="flex flex-col justify-center align-middle absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-dark bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
               <Link to="/venue/:id">
-                <ButtonOutlineWhite className="z-50">
+                <ButtonOutlineWhite className="opacity-1">
                   details
                 </ButtonOutlineWhite>
               </Link>
