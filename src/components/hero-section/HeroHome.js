@@ -19,7 +19,7 @@ const HeroHome = () => {
             className="pb-6"
           ></HeroLogo>
           <h1 className="white h4">
-            discover, book and enjoy the most exquisite venues.
+            discover, book and enjoy the most exquisite accommodations.
           </h1>
           <p className="white">
             <Link to="/sign-in" className="link-white">

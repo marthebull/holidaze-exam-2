@@ -1,23 +1,11 @@
 import React from "react";
-import { HeroContainer, TextHero } from "./styles";
-import {
-  ButtonOutlineWhite,
-  ButtonSolidWhite,
-} from "../../styles/GlobalStyles";
+import { HeroContainer, ImgNoText } from "./styles";
 
 const HeroVenue = () => {
   return (
     <>
       <HeroContainer className="relative">
-        <TextHero
-          style={{
-            backgroundImage: `url(images/hero-bg-home.jpg)`,
-            backgroundPosition: `center`,
-            backgroundSize: `cover`,
-            backgroundColor: `#424242`,
-          }}
-          className="z-20"
-        ></TextHero>
+        <ImgNoText src="https://images.unsplash.com/photo-1414510451013-d0a41fea512e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"></ImgNoText>
       </HeroContainer>
     </>
   );

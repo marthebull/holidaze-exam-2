@@ -1,9 +1,10 @@
 import React from "react";
+import HeroVenue from "../../components/hero-section/HeroVenue";
 
 const Venue = () => {
   return (
     <div>
-      <h1>Venue</h1>
+      <HeroVenue />
     </div>
   );
 };
