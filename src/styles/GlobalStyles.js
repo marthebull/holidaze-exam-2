@@ -72,6 +72,14 @@ main {
   letter-spacing: 0.05rem;
 }
 
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    opacity: 0.6;
+}
+
 .link-white {
 font-size: 1.25rem;
   font-weight: 400;
@@ -214,7 +222,8 @@ export const Logo = styled.img`
 
 export const Container = styled.div`
   max-width: 90%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const CenterContainer = styled.div`

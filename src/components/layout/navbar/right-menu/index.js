@@ -8,17 +8,17 @@ const RightMenu = ({ open }) => {
     <>
       <RightNavMenu open={open}>
         <NavItem>
-          <Link to="/venues" className="link">
+          <Link to="/venues" className="link nav-link">
             venues
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="/sign-in" className="link">
+          <Link to="/sign-in" className="link nav-link">
             sign in
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="/dashboard" className="link">
+          <Link to="/dashboard" className="link nav-link">
             dashboard
           </Link>
         </NavItem>

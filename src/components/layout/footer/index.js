@@ -18,10 +18,10 @@ const Footer = () => {
             <p>book@holidaze.co</p>
           </BrandInfo>
           <FooterNav>
-            <Link to="/venues" className="link">
+            <Link to="/venues" className="link nav-link">
               venues
             </Link>
-            <Link to="/dashboard" className="link">
+            <Link to="/dashboard" className="link nav-link">
               dashboard
             </Link>
           </FooterNav>
