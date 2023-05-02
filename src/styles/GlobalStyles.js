@@ -25,11 +25,14 @@ body {
   font-size: 1rem;
   color: var(--dark-grey);
   background-color: var(--white);
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.05rem;
 }
 
 main {
     min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .h1 {
@@ -62,11 +65,7 @@ main {
   line-height: 150%;
   text-decoration: none;
   color: var(--dark-grey);
-  letter-spacing: 0.03rem;
-}
-
-.link:hover, .link-white:hover {
-    opacity: 0.7;
+  letter-spacing: 0.05rem;
 }
 
 .link-white {
@@ -75,7 +74,7 @@ font-size: 1.25rem;
   line-height: 150%;
   text-decoration: underline;
   color: var(--white);
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.05rem;
 }
 
 h5, label, input {
@@ -108,59 +107,15 @@ small {
 }
 
 button {
+    font-family: 'Outfit', sans-serif;
   display: block;
   width: 240px;
   height: 50px;
   text-align: center;
   border-radius: 2px;
   cursor: pointer;
-}
-
-.button-outline-dark {
-  background-color: rgba(66,66,66,0.01);
-  border: 2px solid var(--dark-grey);
-  color: var(--dark-grey);
-}
-
-.button-outline-dark:hover {
-  background-color: var(--dark-grey-transparent);
-  border: 2px solid var(--dark-grey);
-  color: var(--dark-grey);
-}
-
-.button-outline-white {
-  background-color: rgba(255,255,255,0.01);
-  border: 2px solid var(--white);
-  color: var(--white);
-}
-
-.button-outline-white:hover {
-  background-color: var(--white-transparent);
-  border: 2px solid var(--white);
-  color: var(--white);
-}
-
-.button-solid-dark {
-  background-color: var(--dark-grey);
-  border: 2px solid var(--dark-grey);
-  color: var(--white);
-}
-
-.button-solid-dark:hover {
-  background-color: var(--dark-grey-transparent);
-  border: 2px solid var(--dark-grey);
-  color: var(--dark-grey);
-}
-
-.button-solid-white {
-  background-color: var(--white);
-  border: 2px solid var(--white);
-  color: var(--dark-grey);
-}
-
-.button-solid-dark:hover {
-  background-color: var(--white-transparent);
-  color: var(--white);
+  text-decoration: none;
+  margin: 30px;
 }
 
 input, textarea {
@@ -193,6 +148,7 @@ input[type=checkbox] {
 .big-icon {
 height: auto;
   width: 100px;
+  margin: 30px 0;
 
 }
 
@@ -259,11 +215,56 @@ export const Container = styled.div`
 
 export const CenterContainer = styled.div`
   max-width: 90%;
-  margin: 0 auto;
+  height: 100%;
+  margin: auto auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+`;
+
+export const ButtonSolidDark = styled.button`
+  background-color: var(--dark-grey);
+  border: 2px solid var(--dark-grey);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--dark-grey-transparent);
+    border: 2px solid var(--dark-grey);
+    color: var(--dark-grey);
+  }
+`;
+
+export const ButtonSolidWhite = styled.button`
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  color: var(--dark-grey);
+
+  &:hover {
+    background-color: var(--white-transparent);
+    color: var(--white);
+  }
+`;
+
+export const ButtonOutlineDark = styled.button`
+  background-color: rgba(66, 66, 66, 0.01);
+  border: 2px solid var(--dark-grey);
+  color: var(--dark-grey);
+
+  &:hover {
+    background-color: var(--dark-grey-transparent);
+  }
+`;
+
+export const ButtonOutlineWhite = styled.button`
+  background-color: rgba(255, 255, 255, 0.01);
+  border: 2px solid var(--white);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--white-transparent);
+  }
 `;
 
 export default GlobalStyles;

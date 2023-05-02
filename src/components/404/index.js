@@ -1,15 +1,22 @@
 import React from "react";
-import { CenterContainer } from "../../styles/GlobalStyles";
+import { ButtonSolidDark, CenterContainer } from "../../styles/GlobalStyles";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
     <>
       <CenterContainer>
         <img
-          src="url(https://raw.githubusercontent.com/marthebull/holidaze-exam2023/dd3768e835f9c2e2fdea6615643994fe57a765f4/images/broken-heart-icon.svg)"
+          src="images/broken-heart-icon.svg"
+          className="big-icon"
           alt="Broken heart icon"
         ></img>
-        <h1>404</h1>
+        <p>Sorry! We could not find the page you’re trying to find. </p>
+        <p>Please go back and try again. </p>
+        <ButtonSolidDark>home</ButtonSolidDark>
+        <Link to="/" className="link">
+          <ButtonSolidDark>home</ButtonSolidDark>
+        </Link>
       </CenterContainer>
     </>
   );

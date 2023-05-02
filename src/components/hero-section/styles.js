@@ -24,7 +24,6 @@ export const TextHero = styled.div`
   gap: 20px;
   width: 100%;
   height: 100%;
-
   text-align: center;
 
   @media screen and (max-width: 600px) {
