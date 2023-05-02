@@ -11,7 +11,7 @@ const Navbar = () => {
       <Container>
         <Nav>
           <Link to="/" className="link">
-            <Logo src="https://raw.githubusercontent.com/marthebull/holidaze-exam2023/187f416b0fd1cc2255c1e2d534bf8e89b5ee8657/images/logo-holidaze.svg"></Logo>
+            <Logo src="/images/logo-holidaze.svg"></Logo>
           </Link>
           <MenuItems />
           <Burger />

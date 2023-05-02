@@ -1,24 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ListCard = () => {
   return (
     <>
-      <div classname="max-w-sm rounded overflow-hidden shadow-lg">
-        <img
-          classname="w-full"
-          src="/img/card-top.jpg"
-          alt="Sunset in the mountains"
-        ></img>
-        <div className="px-6 py-4">
-          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-          <p className="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
-          </p>
+      <Link>
+        <div class="full-w rounded overflow-hidden shadow-sm">
+          <img
+            class="w-full"
+            src="/images/placeholder-image.svg"
+            alt="Sunset in the mountains"
+          ></img>
+          <div className="px-3 py-4">
+            <h3 class="mb-2 h3">Placencia Village, Belize</h3>
+            <div className="flex flex-row gap-3">
+              <img
+                classname="icon"
+                src="/images/moon-sea-icon.svg"
+                alt="Night icon"
+              ></img>
+              <p>48 668 NOK</p>
+            </div>
+            <div className="flex flex-row gap-3">
+              <img
+                classname="icon"
+                src="/images/people-icon.svg"
+                alt="Guests"
+              ></img>
+              <p>2</p>
+            </div>
+          </div>
         </div>
-        <div classname="px-6 pt-4 pb-2"></div>
-      </div>
+      </Link>
     </>
   );
 };

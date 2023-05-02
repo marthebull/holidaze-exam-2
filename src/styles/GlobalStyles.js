@@ -48,8 +48,8 @@ main {
 }
 
 .h3 {
-  font-size: 1.63rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 500;
   line-height: 130%;
 }
 
@@ -88,7 +88,7 @@ a {
   font-size: 1.13rem;
   font-weight: 500;
   line-height: 160%;
-  text-decoration: underline;
+ 
   letter-spacing: 0;
 }
 
@@ -115,7 +115,7 @@ button {
   border-radius: 2px;
   cursor: pointer;
   text-decoration: none;
-  margin: 30px;
+  margin: 40px auto;
 }
 
 input, textarea {

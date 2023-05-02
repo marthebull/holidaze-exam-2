@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <>
-      <HeroContainer>
+      <HeroContainer className="mb-4">
         <TextHero
           style={{
             backgroundImage: `url(images/hero-bg-home.jpg)`,
