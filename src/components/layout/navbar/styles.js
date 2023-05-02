@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   width: 100%;
-  height: 10vh;
-  min-height: 55px;
+  height: 8vh;
+  min-height: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;

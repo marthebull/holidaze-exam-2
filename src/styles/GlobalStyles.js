@@ -9,6 +9,10 @@ const GlobalStyles = createGlobalStyle`
   --light-grey: #d3d3d3;
 }
 
+.white {
+    color: var(--white);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,25 +32,25 @@ main {
     min-height: 70vh;
 }
 
-h1 {
+.h1 {
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 120%;
 }
 
-h2 {
+.h2 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 130%;
 }
 
-h3 {
+.h3 {
   font-size: 1.63rem;
   font-weight: 500;
   line-height: 130%;
 }
 
-h4 {
+.h4 {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 130%;
@@ -59,6 +63,16 @@ h4 {
   text-decoration: none;
   color: var(--dark-grey);
   letter-spacing: 0.03rem;
+}
+
+.link-white {
+font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration: underline;
+  color: var(--white);
+  letter-spacing: 0.03rem;
+
 }
 
 
