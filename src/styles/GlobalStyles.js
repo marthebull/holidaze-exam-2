@@ -49,19 +49,19 @@ main {
 
 .h3 {
   font-size: 1.63rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 130%;
 }
 
 .h4 {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 130%;
 }
 
 .link, button {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   text-decoration: none;
   color: var(--dark-grey);
@@ -70,7 +70,7 @@ main {
 
 .link-white {
 font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   text-decoration: underline;
   color: var(--white);

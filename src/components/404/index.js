@@ -13,7 +13,6 @@ const NotFound = () => {
         ></img>
         <p>Sorry! We could not find the page you’re trying to find. </p>
         <p>Please go back and try again. </p>
-        <ButtonSolidDark>home</ButtonSolidDark>
         <Link to="/" className="link">
           <ButtonSolidDark>home</ButtonSolidDark>
         </Link>
