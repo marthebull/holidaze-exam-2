@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
+import NotFound from "../../components/404";
 
 const PageNotFound = () => {
   return (
     <div>
-        <h1>404</h1>
-      
+      <NotFound />
     </div>
-  )
-}
+  );
+};
 
-export default PageNotFound
+export default PageNotFound;

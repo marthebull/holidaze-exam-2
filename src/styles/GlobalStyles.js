@@ -65,6 +65,10 @@ main {
   letter-spacing: 0.03rem;
 }
 
+.link:hover, .link-white:hover {
+    opacity: 0.7;
+}
+
 .link-white {
 font-size: 1.25rem;
   font-weight: 500;
@@ -72,9 +76,7 @@ font-size: 1.25rem;
   text-decoration: underline;
   color: var(--white);
   letter-spacing: 0.03rem;
-
 }
-
 
 h5, label, input {
   font-size: 1.25rem;
@@ -96,7 +98,6 @@ p {
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0;
-
 }
 
 small {
@@ -189,6 +190,12 @@ input[type=checkbox] {
   margin-right: 10px;
 }
 
+.big-icon {
+height: auto;
+  width: 100px;
+
+}
+
 .flex-h {
   display: flex;
   flex-direction: row;
@@ -248,6 +255,15 @@ export const Logo = styled.img`
 export const Container = styled.div`
   max-width: 90%;
   margin: 0 auto;
+`;
+
+export const CenterContainer = styled.div`
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default GlobalStyles;
