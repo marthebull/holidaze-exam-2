@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import RightMenu from "../right-menu";
 
 const BurgerMenu = styled.div`
   width: 1.5rem;
@@ -8,6 +9,7 @@ const BurgerMenu = styled.div`
   justify-content: space-around;
   flex-flow: column nowrap;
   align-items: end;
+  display: none;
 
   div {
     width: 1.5rem;
@@ -17,6 +19,7 @@ const BurgerMenu = styled.div`
     transform-origin: 1px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    z-index: 1000;
 
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
@@ -32,6 +35,23 @@ const BurgerMenu = styled.div`
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
     }
   }
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+  }
+`;
+
+export const MenuOverlay = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(66, 66, 66, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  opacity: ${({ open }) => (open ? 1 : 0)};
+  transition: 0.3s ease-in-out;
 `;
 
 const Burger = () => {
@@ -43,6 +63,8 @@ const Burger = () => {
         <div />
         <div />
       </BurgerMenu>
+      <RightMenu open={open} />
+      <MenuOverlay open={open} onClick={() => setOpen(!open)} />
     </>
   );
 };
