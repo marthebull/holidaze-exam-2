@@ -6,7 +6,7 @@ const Searchbar = () => {
       <input
         type="text"
         placeholder="search for country, city, host etc..."
-        className="mx-auto mb-6"
+        className="mx-auto mb-1"
       ></input>
     </>
   );
