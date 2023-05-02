@@ -157,11 +157,15 @@ input[type=checkbox] {
   margin-right: 10px;
 }
 
+.medium-icon {
+    height: 30px;
+  width: auto;
+}
+
 .big-icon {
 height: auto;
   width: 100px;
   margin: 30px 0;
-
 }
 
 .flex-h {
