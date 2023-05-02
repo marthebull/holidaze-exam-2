@@ -13,13 +13,13 @@ const MenuItems = () => {
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="/sign-in" className="link">
-            sign in
+          <Link to="/dashboard" className="link">
+            dashboard
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="/dashboard" className="link">
-            dashboard
+          <Link to="/sign-in" className="link">
+            log out
           </Link>
         </NavItem>
         <NavItem>

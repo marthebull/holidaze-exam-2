@@ -24,6 +24,10 @@ body {
   letter-spacing: 0.03rem;
 }
 
+main {
+    min-height: 70vh;
+}
+
 h1 {
   font-size: 2.25rem;
   font-weight: 600;

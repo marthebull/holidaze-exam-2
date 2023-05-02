@@ -28,7 +28,7 @@ const BurgerMenu = styled.div`
     &:nth-child(2) {
       width: 1rem;
       opacity: ${({ open }) => (open ? 0 : 1)};
-      transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
+      transform: ${({ open }) => (open ? "translateX(-60%)" : "translateX(0)")};
     }
 
     &:nth-child(3) {
@@ -51,6 +51,7 @@ export const MenuOverlay = styled.div`
   z-index: 1;
 
   opacity: ${({ open }) => (open ? 1 : 0)};
+  display: ${({ open }) => (open ? "block" : "none")};
   transition: 0.3s ease-in-out;
 `;
 
