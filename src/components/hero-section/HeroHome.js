@@ -2,7 +2,7 @@ import React from "react";
 import { HeroContainer, HeroLogo, TextHero } from "./styles";
 import { Link } from "react-router-dom";
 
-const HeroSection = () => {
+const HeroHome = () => {
   return (
     <>
       <HeroContainer className="mb-4">
@@ -11,7 +11,7 @@ const HeroSection = () => {
             backgroundImage: `url(images/hero-bg-home.jpg)`,
             backgroundPosition: `center`,
             backgroundSize: `cover`,
-            backgroundColor: `black`,
+            backgroundColor: `#424242`,
           }}
         >
           <HeroLogo src="images/logo-holidaze-white.svg"></HeroLogo>
@@ -33,4 +33,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroHome;

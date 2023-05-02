@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
+import HeroManage from "../../components/hero-section/HeroManage";
 
 const ManageVenue = () => {
   return (
-    <div>
-        <h1>Manage venue</h1>
-      
-    </div>
-  )
-}
+    <>
+      <HeroManage />
+    </>
+  );
+};
 
-export default ManageVenue
+export default ManageVenue;

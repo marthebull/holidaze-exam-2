@@ -115,7 +115,7 @@ small {
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
-  letter-spacing: 0;
+  
 }
 
 button {
